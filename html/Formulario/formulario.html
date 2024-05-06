@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="formulario.css">
+<title>Bienvenidos</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url(/2.jpg);
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+   
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <section class="container">
+        <div class="logo">
+            <img src="img" alt="">
+
+        </div>
+
+    </section>
+<form action="/submit" method="post">
+    <h2>Bienvenidos</h2>
+    <input type="text" name="nombres" placeholder="Nombres" required>
+    <input type="text" name="Apellidos" placeholder="Apellidos" required>
+    <input type="text" name="Edad" placeholder="Edad" required>
+    <input type="email" name="email" placeholder="Correo" required>
+    <input type="text" name="contraseña" placeholder="contraseña" required>
+    <button>Registrate</button>
+</form>
+
+</body>
+</html>
